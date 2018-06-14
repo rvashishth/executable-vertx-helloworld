@@ -1,5 +1,7 @@
 
-How to run a vertx application packaged as fat jar
+How to run a vertx application packaged as fat jar 
+Maven shade plugin – this helps us build a fat-jar, a single jar with all the dependents jar files.
+
 >mvn clean package
 >java -jar demo-1.0.0-SNAPSHOT-fat.jar
 
