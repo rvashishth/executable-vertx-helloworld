@@ -1,10 +1,12 @@
-package com.wolftechnica.vertx.samples.demo;
+package com.us.vertx.simplestart;
 
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Vertx;
 
-public class MainVerticle extends AbstractVerticle {
+public class SampleVerticleNoArgStart extends AbstractVerticle {
 
+	/**
+	 * This operation is async 
+	 **/
     @Override
     public void start() throws Exception {
         vertx.createHttpServer().requestHandler(req -> {
@@ -15,7 +17,4 @@ public class MainVerticle extends AbstractVerticle {
         System.out.println("HTTP server started on port 8080");
     }
     
-    public MainVerticle() {
-    	Vertx vertx2 = Vertx.factory.vertx();
-	}
 }
